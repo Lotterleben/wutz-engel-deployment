@@ -33,6 +33,13 @@ $ git checkout -b wutzrock-locale-DONOTDELETE origin/wutzrock-locale-DONOTDELETE
 ```
 you are now on the `wutzrock-locale-DONOTDELETE` branch.
 
+First, rebase this branch on top of our upstream main to pull in all the upstream changes:
+
+```
+$ git rebase origin/main
+```
+(if you get a merge conflict and are unsure how to handle these, contact Lotte)
+
 Then, open all `*.po` files in `resources/lang/de_DE`. Check if any of the following keywords have re-appeared and replace them with the listed replacements.
 
 | term  | replace with |
